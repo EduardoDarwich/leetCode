@@ -1,0 +1,48 @@
+package Array;
+
+import java.util.HashMap;
+
+public class TwoSum {
+        /*Resolvendo o desafio TwoSum
+
+        - Dado um array de inteiros e um inteiro, retorna índices dos dois números tais que somam para o alvo.numstarget
+        - Você pode assumir que cada entrada teria exatamente uma solução, e não pode usar o mesmo elemento duas vezes.
+        - Você pode devolver a resposta em qualquer ordem.*/
+
+/*
+        Exemplo 1:
+
+        Input: nums = [2,7,11,15], target = 9
+        Output: [0,1]
+        Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+        Exemplo 2:
+
+        Input: nums = [3,2,4], target = 6
+        Output: [1,2]
+        Exemplo 3:
+
+        Input: nums = [3,3], target = 6
+        Output: [0,1]
+*/
+
+
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> hm = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int complemento = target - nums[i];
+
+            if (hm.containsKey(nums[i])) {
+
+                return new int[] {hm.get(nums[i]), i};
+
+            }
+
+            hm.put(complemento,i);
+
+        }
+        return new int[]{};
+    }
+
+
+}
