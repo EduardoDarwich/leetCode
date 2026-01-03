@@ -7,8 +7,8 @@ public class Main {
         //Testando alguns casos
 
 
-        /*TwoSum ts = new TwoSum();
-        int[] resultado = ts.twoSum(new int[]{3,2,4}, 6);
+/*        TwoSum ts = new TwoSum();
+        int[] resultado = ts.twoSum(new int[]{2,5,5,11}, 10);
         System.out.println(resultado[0] + " " + resultado[1]);
 
         int[] resultado2 = ts.twoSum(new int[]{2,7,11,15}, 9);
