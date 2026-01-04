@@ -1,4 +1,5 @@
 import Array.LongestCommonPrefix;
+import Array.RemoveDuplicatesFromSortedArray;
 import Array.TwoSum;
 
 public class Main {
@@ -7,7 +8,7 @@ public class Main {
         //Testando alguns casos
 
 
-/*        TwoSum ts = new TwoSum();
+        /*TwoSum ts = new TwoSum();
         int[] resultado = ts.twoSum(new int[]{2,5,5,11}, 10);
         System.out.println(resultado[0] + " " + resultado[1]);
 
@@ -21,6 +22,13 @@ public class Main {
 
         String resultado2 = lcp.longestCommonPrefix(new String[]{"avião", "aveia", "avelã"});
         System.out.println(resultado2);*/
+
+        /*RemoveDuplicatesFromSortedArray rm = new RemoveDuplicatesFromSortedArray();
+        int resultado = rm.removeDuplicates(new int[]{1,1,2,2,3,4,5,6});
+        System.out.println(resultado);*/
+
+
+
 
     }
 }
